@@ -1,9 +1,7 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import { createElement } from "react";
+import { createRoot } from "react-dom/client";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+// 这里演示通过createElement方法去创建html元素
+const element = createElement("p", { id: "hello" }, "Hello World!");
+
+createRoot(document.getElementById("root")).render(element);
