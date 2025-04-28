@@ -1,4 +1,4 @@
-function ªApp() {
+function App() {
   return <div>Hello world</div>;
 }
 
